@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="tentangkami.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	<!--link berguna untuk menghubungkan antara dokumen (HTML) dengan sumber file dari luar (eksternal)-->
+	<meta charset="utf-8">
+	<!--meta untuk pemberi informasi metadata dari sebuah halaman web-->
+	<script type="text/javascript">
+		var counter = 1;
+		setInterval(function(){
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if(counter > 8) {
+				counter = 1; 
+			}
+		},5000);
+		/*Aturan untuk image slide*/
+	</script>
+</head>
+<body background="image/triv.jpg" style="background-size:100%;">
+	<div id="navbar">
+	<!--div ini untuk mengelompokkan navigation bar-->
+		
+		<ul style="overflow:hidden; margin-top:0px; padding-left:0px; list-style-type:none;">
+		<!--ul berguna untuk membuat tampilan daftar menggunakan simbol seperti bullet, cyrcle, dan lainnya, diimplementasikan dalam navigation bar-->
+			<i class="fas fa-home"></i>
+			<li> <a class="text1" href="index.html">Home</a> </li>
+			<li> <p class="text2">About Us</p> </li>
+			<li> <a class="text3" href="#contact">Contact</a></li>
+			<li>
+				<div id="kotakregis">
+					<a href="regist.html" id="regis">Registration</a>
+				</div>
+			</li>
+				
+			<div id="line"></div>
+				
+			<li>
+				<div id="kotaklogin">
+					<a href="#login" id="login">Login
+						<i class="fas fa-user"></i>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<b><p class="judul">EXPLORE INDONESIA</p></b>
+	<!--p untuk tulisan judul website-->
+
+	<div style="background-color:white; width:100%; height:550px; top:39%; position:absolute; right:0%; opacity:100%;">
+	<!-- div ini untuk mengelompokkan gambar dengen animasi slide dan paragraf-->
+
+		<b><p id="tulisan1">Welcome to the Explore Indonesia</p></b>
+
+		<div id="paragraf1">
+		<!--div ini untuk mengelompokkan paragraf pertama-->
+			<p id="story">Definition</p>
+			<p id="tulisan2"><b>Explore Indonesia</b> is a travel community created to make it easier for tourists who want to find information about the place to be visited. You can join us on a journey of exploration together. besides that you can also ask to talk about all things related to travel ranging from costs, tours, food and activities. so this platform is perfect for you to get information before traveling. </p>
+			<!--p berisi tulisan informasi mengenai website-->
+		</div>
+
+		<div class="slider">
+		<!--div ini untuk mengelompokkan gambar pertama dengan beranimasi seperti slide-->
+			<div class="slides">
+				<input type="radio" name="btn" id="radio1">
+				<input type="radio" name="btn" id="radio2">
+				<input type="radio" name="btn" id="radio3">
+				<input type="radio" name="btn" id="radio4">
+				<!--input ini bertipe radio button yang bisa menggeser animasi gambar secara manual--> 
+
+				<div class="slide first">
+					<img src="image/D-1.jpg">
+					<!--elemen pada gambar-->
+				</div>
+				<div class="slide">
+					<img src="image/D-2.jpg">
+				</div>
+				<div class="slide">
+					<img src="image/D-3.jpg">
+				</div>
+				<div class="slide">
+					<img src="image/D-4.jpg">
+				</div>
+
+				<div class="navigation-auto">
+				<!--div ini tuk mengelompokkan radio button secara otomatis-->
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+				</div>
+
+				<div class="navigation-manual">
+				<!--div ini tuk mengelompokkan radio button secara manual-->
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+					<label for="radio4" class="manual-btn"></label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="background-color:white; width:100%; height:630px; top:786px; position:absolute; right:0%; opacity:100%;">
+		<div id="paragraf2">
+		<!--div ini untuk mengelompokkan paragraf pertama-->
+			<p id="values">History</p>
+			<p id="tulisan3">The website explore Indonesia started in 2018. This website aims to make it easier for tourists to get information. Explore Indonesia is not only a website to get information, but on this website it also happens for us to add friends, take a stopover with willing group members, ask about travel costs to a place and travel together.</p>
+			<!--p berisi tulisan informasi mengenai pengembang website-->
+		</div>
+
+		<div class="slider2" style="background-color:transparent;">
+		<!--div ini untuk mengelompokkan gambar kedua dengan beranimasi seperti slide-->
+			<div class="slides2">
+				<input type="radio" name="btn2" id="radio5">
+				<input type="radio" name="btn2" id="radio6">
+				<input type="radio" name="btn2" id="radio7">
+				<input type="radio" name="btn2" id="radio8">
+				<!--input ini bertipe radio button yang bisa menggeser animasi gambar secara manual-->
+
+				<div class="slide2 two">
+					<img src="image/W-1.jpg">
+					<!--elemen pada gambar-->
+				</div>
+				<div class="slide2">
+					<img src="image/W-2.jpg">
+				</div>
+				<div class="slide2">
+					<img src="image/W-3.jpg">
+				</div>
+				<div class="slide2">
+					<img src="image/W-4.jpg">
+				</div>
+
+				<div class="navigation-auto2">
+				<!--div ini tuk mengelompokkan radio button secara otomatis-->
+					<div class="auto-btn5"></div>
+					<div class="auto-btn6"></div>
+					<div class="auto-btn7"></div>
+					<div class="auto-btn8"></div>
+				</div>
+
+				<div class="navigation-manual2">
+				<!--div ini tuk mengelompokkan radio button secara manual-->
+					<label for="radio5" class="manual-btn2"></label>
+					<label for="radio6" class="manual-btn2"></label>
+					<label for="radio7" class="manual-btn2"></label>
+					<label for="radio8" class="manual-btn2"></label>
+				</div>
+			</div>
+		</div>
+
+		<p id="tulisan4">Travel Experiences</p>
+
+		<div class="bulet1">
+		<!--div ini untuk mengelompokkan icon-->
+			<i class="fas fa-hiking"></i>
+			<!--i ini adalah icon-->
+		</div>
+		<div class="bulet2">
+			<i class="fas fa-swimmer"></i>
+		</div>
+
+		<div class="bulet3">
+			<i class="fas fa-anchor"></i>
+		</div>
+
+		<div class="bulet4">
+			<i class="fas fa-university"></i>
+		</div>
+
+		<div class="bulet5">
+			<i class="fas fa-users"></i>
+		</div>
+
+		<div class="bulet6">
+			<i class="fas fa-utensils"></i>
+		</div>
+
+		<div class="bulet7">
+			<i class="fas fa-gem"></i>
+		</div>
+
+		<div class="bulet8">
+			<i class="fas fa-hand-holding-medical"></i>
+		</div>
+
+		<div class="bulet9">
+			<i class="fas fa-calendar-alt"></i>
+		</div>
+
+		<div class="bulet10">
+			<i class="fas fa-skiing-nordic"></i>
+		</div>
+	</div>
+
+	<div style="width:100%; background-color:black; height:45px; top:220%; bottom:0%; position:absolute; right:0%;">
+	<!--div ini untuk tulisan hak cipta website-->
+		<p class="copy">Copyright <i class="far fa-copyright"></i> 2020 - Explore Indonesia. All Rights Reserved.</p>
+		<ul>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-facebook-f"></i>
+        </ul>
+	</div>
+
+</body>
+</html>

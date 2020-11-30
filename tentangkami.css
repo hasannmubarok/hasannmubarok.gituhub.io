@@ -1,0 +1,659 @@
+#navbar {
+	background-color:#65aabc;
+	width:100%; 
+	height:7%; 
+	top:0%; 
+	position:fixed; 
+	right:0%;
+	z-index:100;
+}
+
+.fa-home{
+	font-size:32px;
+	top:7px;
+	left:7px;
+	position:absolute;
+	color: white;
+}
+
+.text1 {
+	font-size:20px;
+	margin-left:50px;
+	margin-top:0px;
+	position:relative;
+	color:white;
+	display: block;
+	padding:10px 40px;
+	text-decoration: none;
+}
+
+li {
+	float:left;
+}
+
+.text2 {
+	font-size:20px;
+	margin-left:0px;
+	position:relative;
+	margin-top:0px;
+	color:white;
+	display: block;
+	padding:10px 40px;
+	text-decoration: none;
+	background-color:#519CAF;
+}
+
+.text1:hover, .text3:hover{
+	background-color:#c0cccf;
+}
+
+.text3{
+	font-size:20px;
+	margin-left:0px;
+	position:relative;
+	margin-top:0px;
+	color:white;
+	display: block;
+	padding:10px 40px;
+	text-decoration: none;
+	list-style:none;
+}
+
+.text1:active {
+	background-color:#519CAF;
+}
+
+#kotakregis{
+	width:80px;
+	height:20px;
+	top:6px;
+	right:156px;
+	position:absolute;
+	color:black;
+	font-size:17px;
+	border:3px solid white;
+	padding: 4px 11px;
+	border-radius:4px;
+}
+
+#regis{
+	text-decoration: none;
+	outline: none;
+	font-size:17px;
+	color:white;
+}
+
+#kotakregis:hover{
+	border:3px solid black;
+}
+
+#regis:hover{
+	color:black;
+}
+
+#kotakregiS:active, #regis:active{
+	color:white;
+}
+
+#line {
+	border-left:2px solid black;
+	height:25px;
+	position:absolute;
+	top:12px;
+	left:1206px;
+}
+
+#kotaklogin{
+	width:75px;
+	height:20px; 
+	top:14px; 
+	right:28px; 
+	position:absolute; 
+	color:white; padding-left:25px;
+}
+
+#login{
+	text-decoration: none;
+	outline: none;
+	font-size:17px;
+	color:white;		
+}
+
+.fa-user{
+	font-size:17px;
+	color:white;
+	left:0px;
+	position:absolute;
+}
+
+#login:hover, .fa-user:hover{
+	color:black;
+}
+
+.judul {
+	font-size:70px;
+	text-align:center;
+	left:300px;
+	font-family:Palatino Linotype;
+	top:10px;
+	position:absolute;
+	color:white;
+}
+
+#tulisan1 {
+	font-size:37px;
+	left:385px;
+	position:absolute;
+	font-family:Palatino Linotype;
+	top:1px;
+}
+
+#paragraf1 {
+	background-color:transparent;
+	width:40%;
+	height:420px;
+	top:20%;
+	left:5%;
+	position:absolute;
+	line-height:25px;
+	animation-name: paraf;
+	animation-duration: 3s;
+}
+
+@keyframes paraf{
+	from {left: 750px;}
+	to {left: 68px;}
+} /*Untuk animasi gerakan pada tulisan paragraf kedua dari kanan ke kiri pada website*/
+
+#story{
+	font-size:50px;
+	left:150px;
+	font-family:Arial;
+	top:25px;
+	position:absolute;
+	text-align:justify;
+	line-height: bold;
+}
+
+#tulisan2 {
+	font-size:15px;
+	left:10px;
+	font-family:Arial;
+	top:30%;
+	position:absolute;
+	text-align:justify;
+}
+
+.slider {
+	width:48%;
+	height:420px;
+	top:20%;
+	right:2%;
+	position:absolute;
+	border-radius:10px;
+	overflow:hidden;
+	background-color:transparent;
+}
+
+.slides{
+	width:500%;
+	height:500px;
+	display: flex;
+}
+
+.slides input {
+	display:none;
+}
+
+.slide{
+	width:20%;
+	transition:2s;	
+}
+
+.slide img{
+	width:670px;
+	height:430px;
+}
+
+.navigation-manual {
+	position:absolute;
+	width: 800px;
+	margin-top:380px;
+	margin-left:-65px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn{
+	border:2px solid #40D3DC;
+	padding:5px;
+	border-radius: 10px;
+	cursor:pointer;
+	transition:1s;
+}
+
+.manual-btn:not(:last-child) {
+	margin-right: 30px;
+}
+
+.manual-btn:hover{
+	background:#40D3DC;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+	margin-left: -60%;
+}
+
+.navigation-auto{
+	position: absolute;
+	display:flex;
+	width:670px;
+	justify-content:center;
+	margin-top:380px;
+}
+
+.navigation-auto div{
+	border: 2px solid #40d3dc;
+	padding: 5px;
+	border-radius: 10px;
+	transition:1s;
+}
+
+.navigation-auto div:not(:last-child) {
+	margin-right:30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #40D3DC;
+}
+
+#paragraf2{
+	background-color:transparent;
+	width:40%;
+	height:420px;
+	top:0%;
+	right:5%;
+	position:absolute;
+	line-height:25px;
+	animation-name: paraff;
+	animation-duration: 3s;
+}
+
+@keyframes paraff{
+	from {left: 70px;}
+	to {left: 742px;}
+} /*Untuk animasi gerakan pada tulisan paragraf kedua dari kiri ke kanan pada website*/
+
+
+#values{
+	font-size:50px;
+	right:200px;
+	font-family:Arial;
+	top:45px;
+	position:absolute;
+	text-align:justify;
+	line-height: bold;
+}
+
+#tulisan3{
+	font-size:15px;
+	right:10px;
+	font-family:Arial;
+	top:150px;
+	position:absolute;
+	text-align:justify;
+}
+
+.slider2 {
+	width:48%;
+	height:420px;
+	top:0%;
+	left:2%;
+	position:absolute;
+	border-radius:10px;
+	overflow:hidden;
+}
+
+.slides2{
+	width:500%;
+	height:500px;
+	display: flex;
+}
+
+.slides2 input {
+	display:none;
+}
+
+.slide2{
+	width:20%;
+	transition:2s;	
+}
+
+.slide2 img{
+	width:670px;
+	height:430px;
+}
+
+.navigation-manual2 {
+	position:absolute;
+	width: 800px;
+	margin-top:380px;
+	margin-left:-65px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn2{
+	border:2px solid #1c7c90;
+	padding:5px;
+	border-radius: 10px;
+	cursor:pointer;
+	transition:1s;
+}
+
+.manual-btn2:not(:last-child) {
+	margin-right: 30px;
+}
+
+.manual-btn2:hover{
+	background:#1c7c90;
+}
+
+#radio5:checked ~ .two{
+	margin-left: 0;
+}
+
+#radio6:checked ~ .two{
+	margin-left: -20%;
+}
+
+#radio7:checked ~ .two{
+	margin-left: -40%;
+}
+
+#radio8:checked ~ .two{
+	margin-left: -60%;
+}
+
+.navigation-auto2{
+	position: absolute;
+	display:flex;
+	width:670px;
+	justify-content:center;
+	margin-top:380px;	
+}
+
+.navigation-auto2 div{
+	border: 2px solid #1c7c90;
+	padding: 5px;
+	border-radius: 10px;
+	transition:1s;
+}
+
+.navigation-auto2 div:not(:last-child) {
+	margin-right:30px;
+}
+
+#radio5:checked ~ .navigation-auto2 .auto-btn5{
+	background: #1c7c90;
+}
+
+#radio6:checked ~ .navigation-auto2 .auto-btn6{
+	background: #1c7c90;
+}
+
+#radio7:checked ~ .navigation-auto2 .auto-btn7{
+	background: #1c7c90;
+}
+
+#radio8:checked ~ .navigation-auto2 .auto-btn8{
+	background: #1c7c90;
+}
+
+#tulisan4 {
+	font-size:35px;
+	top:425px;
+	position:absolute;
+	left:525px;
+	font-family:Palatino Linotype;
+	font-weight:bold;
+}
+
+.bulet1, .bulet2, .bulet3, .bulet4, .bulet5, .bulet6, .bulet7, .bulet8, .bulet8, .bulet9, .bulet10 {
+	width:60px;
+	height:60px;
+	background-color:#f1f4f5;
+	top:525px;
+	position:absolute;
+	border-radius:50%;
+}
+
+.bulet1 {
+	left:200px;
+}
+
+.bulet2{
+	left:300px;
+}
+
+.bulet3{
+	left:400px;
+}
+.bulet4{
+	left:500px;
+}
+
+.bulet5{
+	left:600px;
+}
+
+.bulet6{
+	left:700px;
+}
+
+.bulet7{
+	left:800px;
+}
+
+.bulet8{
+	left:900px;
+}
+
+.bulet9{
+	left:1000px;
+}
+
+.bulet10{
+	left:1100px;
+}
+
+.bulet1:hover, .bulet7:hover{
+	background-color:#2eb82e;
+}
+
+.bulet2:hover, .bulet8:hover{
+	background-color:#4da6ff;
+}
+
+.bulet3:hover, .bulet9:hover{
+	background-color:#cc3300;
+}
+
+.bulet4:hover{
+	background-color:#ff751a;
+}
+
+.bulet5:hover{
+	background-color:#bf40bf;
+}
+
+.bulet6:hover{
+	background-color:#ff4d4d;
+}
+
+.bulet10:hover{
+	background-color:#ffcc00;
+}
+
+.fa-hiking, .fa-swimmer, .fa-anchor, .fa-university, .fa-users, .fa-utensils,
+.fa-hand-holding-medical, .fa-gem, .fa-skiing-nordic, .fa-calendar-alt {
+	position:absolute;
+}
+
+.fa-hiking:hover, .fa-swimmer:hover, .fa-anchor:hover, .fa-university:hover, .fa-users:hover, .fa-utensils:hover,
+.fa-hand-holding-medical:hover, .fa-gem:hover, .fa-skiing-nordic:hover, .fa-calendar-alt:hover {
+	color:white;
+}
+
+.fa-hiking{
+	font-size:30px;
+	top:14px;
+	left:18px;
+	color:#2eb82e;
+}
+
+.fa-swimmer{
+	font-size:29px;
+	top:16px;
+	left:12px;
+	color:#4da6ff;
+}
+
+.fa-anchor{
+	font-size:30px;
+	top:15px;
+	left:13px;
+	color:#cc3300;
+}
+
+.fa-university {
+	font-size:32px;
+	top:13px;
+	left:14px;
+	color:#ff751a;
+}
+
+.fa-users{
+	font-size:28px;
+	top:17px;
+	left:14px;
+	color:#bf40bf;
+}
+
+.fa-utensils {
+	font-size:28px;
+	top:16px;
+	left:19px;
+	color:#ff4d4d;
+}
+
+.fa-gem {
+	font-size:29px;
+	top:18px;
+	left:14px;
+	color:#2eb82e;
+}
+
+.fa-hand-holding-medical{
+	font-size:30px;
+	top:15px;
+	left:15px;
+	color:#4da6ff;
+}
+
+.fa-calendar-alt{
+	font-size:30px;
+	top:15px;
+	left:16px;
+	color:#cc3300;
+}
+
+.fa-skiing-nordic{
+	font-size:30px;
+	top:15px;
+	left:14px;
+	color:#ffcc00;
+}
+
+.tulisan1, .tulisan2, .tulisan3 {
+	font-family:Arial;
+	font-size:20px;
+	color:white;
+	opacity:100%;
+	top:45%;
+	position:absolute;
+}
+
+.tulisan1 {
+	left:120px;
+}
+
+.tulisan2 {
+	left:523px;
+}
+
+.tulisan3 {
+	left:970px;
+}
+
+.fa-facebook-f {
+	color:white;
+	font-size:15px;
+	right:680px;
+	top:52%;
+	position:absolute;
+}
+
+.fa-twitter {
+	color:white;
+	font-size:15px;
+	right:630px;
+	top:53%;
+	position:absolute;
+}
+
+.fa-instagram {
+	color:white;
+	font-size:17px;
+	right:655px;
+	top:50%;
+	position:absolute;
+}
+
+.copy{
+	color:white; 
+	font-size:11px;
+	text-align:center;
+	top:-4px;
+	left:560px;
+	position:absolute;
+}
+
+.fa-copyright{
+	color:white;
+	font-size:12px;
+}

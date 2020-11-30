@@ -1,0 +1,234 @@
+#navbar{
+	background-color:#65aabc;
+	width:100%;
+	height:7%;
+	top:0%;
+	position:fixed;
+	right:0%;
+	z-index:100;
+}
+
+.fa-home{
+	font-size:32px;
+	top:7px;
+	left:7px;
+	position:absolute;
+	color: white;
+}
+
+.text1 {
+	font-size:20px;
+	margin-left:50px;
+	margin-top:0px;
+	position:relative;
+	color:white;
+	display: block;
+	padding:10px 40px;
+	text-decoration: none;
+	background-color:#519CAF;
+}
+
+li {
+	float:left;
+}
+
+.text2 {
+	font-size:20px;
+	margin-left:0px;
+	position:relative;
+	margin-top:0px;
+	color:white;
+	display: block;
+	padding:10px 40px;
+	text-decoration: none;
+}
+
+.text2:hover, .text3:hover{
+	background-color:#c0cccf
+}
+
+.text3{
+	font-size:20px;
+	margin-left:0px;
+	position:relative;
+	margin-top:0px;
+	color:white;
+	display: block;
+	padding:10px 40px;
+	text-decoration: none;
+	list-style:none;
+}
+
+.text2:active {
+	background-color:#519CAF;
+}
+
+#kotakregis{
+	width:80px;
+	height:20px;
+	top:6px;
+	right:156px;
+	position:absolute;
+	color:black;
+	font-size:17px;
+	border:3px solid white;
+	padding: 4px 11px;
+	border-radius:4px;
+}
+
+#regis{
+	text-decoration: none;
+	outline: none;
+	font-size:17px;
+	color:white;
+}
+
+#kotakregis:hover{
+	border:3px solid black;
+}
+
+#regis:hover{
+	color:black;
+}
+
+#kotakregiS:active, #regis:active{
+	color:white;
+}
+
+#line {
+	border-left:2px solid black;
+	height:25px;
+	position:absolute;
+	top:12px;
+	left:1206px;
+}
+
+#kotaklogin{
+	width:75px;
+	height:20px; 
+	top:14px; 
+	right:28px; 
+	position:absolute; 
+	color:white; padding-left:25px;
+}
+
+#login{
+	text-decoration: none;
+	outline: none;
+	font-size:17px;
+	color:white;		
+}
+
+.fa-user{
+	font-size:17px;
+	color:white;
+	left:0px;
+	position:absolute;
+}
+
+#login:hover, .fa-user:hover{
+	color:black;
+}
+
+.judul {
+	font-size:80px;
+	text-align:center;
+	left:250px;
+	font-family:Palatino Linotype;
+	top:10%;
+	position:absolute;
+	background-color:#072932;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation-name: judulku;
+	animation-duration: 5s;
+}
+
+@keyframes judulku {
+  0%{top: 0px;}
+  50% {top: 10%;}
+  100% {top:6%px;}
+} /*Untuk animasi gerakan pada tulisan judul website*/
+
+.text7 {
+	font-size:40px;
+	text-align: center;
+	font-family:Palatino Linotype;
+	padding-top:17%;
+	color:white;
+}
+
+.box {
+	width:248px;
+	height:5%;
+	font-size:17px;
+	color:black;
+	left:40%;
+	top:330px;
+	position:absolute;
+	background-color:white;
+	border:none;
+	font-family:MS Sans Serif;
+	outline:none;
+	padding-left:7px;
+	padding-right:10px;
+	border-radius: 8px;
+}
+
+.btn3 {
+	width:5%;
+	height:5%;
+	left:737px;
+	top:331px;
+	position:absolute;
+	border-radius:5px;
+	border:none;
+	font-family: MS Sans Serif;
+	font-size:17px;
+	outline:none;
+	color:black;
+	background-color:#f59c3d;
+}
+
+.btn3:active {
+	background-color:#32ffe0;
+	color: #32ffe0;
+}
+
+.fa-facebook-f {
+	color:white;
+	font-size:15px;
+	right:680px;
+	top:52%;
+	position:absolute;
+}
+
+.fa-twitter {
+	color:white;
+	font-size:15px;
+	right:630px;
+	top:53%;
+	position:absolute;
+}
+
+.fa-instagram {
+	color:white;
+	font-size:17px;
+	right:655px;
+	top:50%;
+	position:absolute;
+}
+
+.copy{
+	color:white; 
+	font-size:11px;
+	text-align:center;
+	top:-4px;
+	left:560px;
+	position:absolute;
+}
+
+.fa-copyright{
+	color:white;
+	font-size:12px;
+}

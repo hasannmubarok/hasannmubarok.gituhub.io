@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="regist.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<!--link berguna untuk menghubungkan antara dokumen (HTML) dengan sumber file dari luar (eksternal)-->
+	<script type="text/javascript">
+		function notif() {
+			var a = document.getElementById("inputnama").value;
+			var b = document.getElementById("opgender").value;
+			var c = document.getElementById("inputage").value;
+			var d = document.getElementById("password").value;
+			var e = document.getElementById("inprofession").value;
+			var f = document.getElementById("opdomicile").value;
+			var g = document.getElementById("inemail").value;
+			
+			if(a != "" && b !== "" && c !== "" && d !=="" && e !=="" && f !=="" && g !==""){
+				alert('"Welcome to the Explore Indonesia"\n'+
+					"\nName: "+a+
+					"\nGender: "+b+
+					"\nAge: "+c+ (" years")+
+					"\nPassword: " +d+
+					"\nProfession: "+e+
+					"\nCountry: "+f+
+					"\nEmail: "+g);
+			}
+			else {
+				alert("Please fill out this field");
+			}
+        }
+        /*Aturan untuk tombol regis untuk memunculkan alert*/
+	</script>
+</head>
+<body background="image/regist.jpg" style="background-size:100%">
+	<div style="background-image:linear-gradient(to bottom, lightblue 0%, #99adb1 50%, #809195 100%); width:100%; height:100%; position:absolute; top:0%; right:0px; opacity:50%;">
+	</div>
+	
+	<div id="navbar">
+	<!--div ini untuk mengelompokkan navigation bar-->
+
+		<ul style="margin-top:0px; padding-left:0px; overflow:hidden; list-style-type:none;">
+		<!--ul berguna untuk membuat tampilan daftar menggunakan simbol seperti bullet, cyrcle, dan lainnya, diimplementasikan dalam navigation bar-->
+			<i class="fas fa-home"></i>
+			<li> <a class="text1" href="index.html">Home</a> </li>
+			<li> <a class="text2" href="tentangkami.html">About Us</a> </li>
+			<li> <a class="text3" href="#contact">Contact</a></li>
+			
+			<li>
+				<div id="kotakregis">Registration
+				</div>
+			</li>
+			
+			<div id="line"></div>
+			
+			<li>
+				<div id="kotaklogin">
+					<a href="#login" id="login">Login
+						<i class="fas fa-user"></i>
+					</a>
+				</div>
+			</li>
+		
+		</ul>
+	</div>
+
+	<b><p class="judul">Explore Indonesia</p></b>
+	<!--p untuk tulisan judul website-->
+
+	<div id="kotak">
+	<!--div ini untuk mengelompokkan form registrasi, gambar, dan element lainnya-->
+
+		<img src="image/regis.jpg" id="fotoreg" >
+		<!--elemen pada gambar-->
+
+		<form name="myform">
+		<!--form sebagai tempat penginputan data-->
+
+			<p class="welcome">Welcome</p>
+			<p class="akun">Register New Account</p>
+			<p class="fullname">Full Name</p>
+				<input type="box" name="inputnama" id="inputnama" placeholder="Enter your full name">
+
+			<p class="gender">Gender</p>
+				<select id="opgender" name="opgender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+				<!--select untuk membuat objek form yang berupa list pilihan-->
+				
+			<p class="age">Age</p>
+				<input type="box" name="inputage" id="inputage">
+			<p class="years">years</p>
+
+			<p class="password">Password</p>
+				<input type="password" id="password" name="password" placeholder="Password">
+
+			<p class="profession">Profession</p>
+				<input type="box" name="inprofession" id="inprofession" placeholder="Enter your profession">
+
+			<p class="domicile">Domicile</p>
+				<textarea name="opdomicile" id="opdomicile" cols="37" rows="4"></textarea>
+
+			<p class="email">Email</p>
+				<input type="box" name="inemail" id="inemail" placeholder="Enter your email">
+
+			<input type="submit" value="Register" onclick="notif()" id="register">
+			<!--input dengan tipe submit untuk memulai proses pengolahan data-->
+			<input type="reset" value="Cancel" id="cancel">
+			<!--input dengan tipe reset untuk mereset data yang diisi-->
+
+			<p class="signin">Already have an account? <span><a href="#login" style="text-decoration:none; color:#62a7cd;">Sign in</a></span></p>
+		</form>
+	</div>
+
+	<div style="width:100%; background-color:black; height:45px; bottom:-25px; position:absolute; right:0%;">
+	<!--div ini untuk tulisan hak cipta website-->
+		<p class="copy">Copyright <i class="far fa-copyright"></i> 2020 - Explore Indonesia. All Rights Reserved.</p>
+		<ul>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-facebook-f"></i>
+        </ul>
+	</div>
+</body>
+</html>
